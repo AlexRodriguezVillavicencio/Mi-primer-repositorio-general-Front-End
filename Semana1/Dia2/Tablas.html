@@ -6,40 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>Document</title>
+    <title>Tablas HTML</title>
 </head>
 
 <body>
-    <table border="1">
-        <tbody>
-            <tr>
-                <td rowspan="2" colspan="2"> row1 </td>
-                <td colspan="3">row1</td>
-            </tr>
-            <tr>
-                <td>row2</td>
-                <td>row2</td>
-                <td>row2</td>
-            </tr>
-            <tr>
-                <td rowspan="2">row3</td>
-                <td>row3</td>
-                <td>row3</td>
-                <td>row3</td>
-                <td>row3</td>
-            </tr>
-            <tr>
-                <td>row4</td>
-                <td>row4</td>
-                <td>row4</td>
-                <td>row4</td>
-            </tr>
-        </tbody>
+    <header>
+        <h1>Tablas en HTML</h1>
+    </header>
+    <main>
         <table border="1">
             <tbody>
                 <tr>
-                    <td colspan="6"> Time Table </td>
+                    <td rowspan="2" colspan="2"> row1 </td>
+                    <td colspan="3">row1</td>
                 </tr>
+                <tr>
+                    <td>row2</td>
+                    <td>row2</td>
+                    <td>row2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">row3</td>
+                    <td>row3</td>
+                    <td>row3</td>
+                    <td>row3</td>
+                    <td>row3</td>
+                </tr>
+                <tr>
+                    <td>row4</td>
+                    <td>row4</td>
+                    <td>row4</td>
+                    <td>row4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="6"> Time Table </th>
+                </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td rowspan="6">Hours</td>
                     <td>mon</td>
@@ -49,7 +59,7 @@
                     <td>fri</td>
                 </tr>
                 <tr>
-                    <td>science</td>
+                    <td>row3</td>
                     <td>row3</td>
                     <td>row3</td>
                     <td>row3</td>
@@ -70,17 +80,87 @@
                     <td>row4</td>
                     <td>row4</td>
                     <td>row4</td>
-                    <td rowspan="2"></td>
+                    <td rowspan="2">row5</td>
                 </tr>
                 <tr>
                     <td>row4</td>
                     <td>row4</td>
                     <td>row4</td>
                     <td>row4</td>
-            
                 </tr>
             </tbody>
         </table>
+
+        <hr />
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th rowspan="2">Tabla Avazada</th>
+                    <th colspan="2">Cabecera Multiples Columnas</th>
+                </tr>
+                <tr>
+                    <th>Primera columna</th>
+                    <th>Segunda columna</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Fila 1</th>
+                    <td>Fila 1 Columna 1</td>
+                    <td>Fila 1 Columna 2</td>
+                </tr>
+                <tr>
+                    <th>Fila 2</th>
+                    <td>Fila 2 Columna 1</td>
+                    <td>Fila 2 Columna 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">pie de pagina</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <hr>
+
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td colspan="5" rowspan="2">2</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td colspan="3">7</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td colspan="3">2</td>
+                    <td colspan="2">3</td>
+                    <td rowspan="2" colspan="3">7</td>
+                </tr>
+                <tr>
+                    <td colspan="3">2</td>
+                    <td colspan="2">3</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 </body>
 
 </html>

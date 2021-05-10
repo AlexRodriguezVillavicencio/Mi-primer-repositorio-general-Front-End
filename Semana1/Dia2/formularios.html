@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,9 @@
     <title>FORMULARIOS</title>
 
     <style>
-        form>div {margin-bottom: 12px;}
+        form>div {
+            margin-bottom: 12px;
+        }
     </style>
 </head>
 
@@ -19,25 +21,70 @@
     </header>
 
     <main>
-        
+
         <form>
             <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" placeholder="ejm: Alex">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ejm: Alex">
             </div>
             <div>
-                <label for="nombre">Apellido:</label>
-                <input type="text" id="apellido" placeholder="ejm: Rodriguez">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" placeholder="Ejm:Ruiz">
             </div>
             <div>
-                <label for="nombre">Edad:</label>
-                <input type="number" id="numero" placeholder="12">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" placeholder="Ejm:23">
             </div>
             <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="apellido" placeholder="ejm: rodriguez">
+                <label for="correo">Email</label>
+                <input type="email" id="correo" placeholder="Ejm: alex@codigo.com">
             </div>
-
+            <div>
+                <label for="fecha">Fecha de Matricula</label>
+                <input type="date" id="fecha" min="2021-05-01" max="2021-05-30">
+            </div>
+            <div>
+                <label for="bootcamp">Selecciones Bootcamp</label>
+                <select id="bootcamp">
+                    <option value="desarrollo">Desarrollo Web FullStack</option>
+                    <option value="digital">Marketing Digital</option>
+                    <option value="app">Desarrollo de aplicaciones móviles</option>
+                </select>
+            </div>
+            <div>
+                <label for="comentario">Mensaje al profesor</label>
+                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label>Escoja Turno:</label>
+                <br>
+                <label for="dia">Dia</label>
+                <input type="radio" id="dia" name="turno" checked>
+                <br>
+                <label for="Noche">Noche</label>
+                <input type="radio" id="noche" name="turno">
+            </div>
+            <fieldset>
+                <legend>Selecione los equipos a utlizar</legend>
+                <br>
+                <label for="au">Audifonos</label>
+                <input type="checkbox" id="au" checked>
+                <br>
+                <label for="la">Laptop</label>
+                <input type="checkbox" id="la">
+                <br>
+                <label for="mo">Mouse</label>
+                <input type="checkbox" id="mo">
+            </fieldset>
+            <div>
+                <label for="color">Selecione el color</label>
+                <input type="color" id="color">
+            </div>
+            <div>
+                <button type="button">Guardar</button>
+                <button type="submit">consultar DNI</button>
+                <button type="reset">limpiar formulario</button>
+            </div>
         </form>
     </main>
 </body>
