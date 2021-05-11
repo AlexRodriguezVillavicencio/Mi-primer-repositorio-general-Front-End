@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+header{
+    height: 60px;
+    box-shadow: 0px 0px 30px #bbb;
+}
+.color-primario {
+    color: violet;
+}
+
+.navegación{
+    display: none;
+}
+aside{
+    height: calc(100vh - 60px);
+    background-color: turquoise;
+    width: 240px;
+}
+
+aside, aside{
+    display: inline-block;
+}
+section{
+    background-color: rgb(219, 111, 219);
+    width: calc(100% - 250px);
+    height: calc(100vh - 60px);
+}
