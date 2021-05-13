@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.header{
+    height: 60px;
+    border: 1px solid black;
+    display: flex;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+nav{
+    flex: 1;
+    background-color: grey;
+}
+
+.header__cart{
+    border: 2px solid green;
+
+}
+.header__links{
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 5rem;
+}
