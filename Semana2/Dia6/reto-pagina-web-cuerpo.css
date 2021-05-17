@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ main{
+     display: flex;
+     flex-direction: column;
+    /*  border: 2px solid red; */
+     width: 50%;
+     max-width: 1440px;
+     margin: auto; 
+     margin-top: -80px; 
+     background-color: rgb(255, 255, 255);
+    }
+
+
+.sección1, .sección2, .sección3, .sección4, .sección5, .sección6{
+/*      border: 2px solid red; */
+     height: 200px;
+    }
+
+/* maquetando la sección1 */
+   .sección1{
+       display: flex;
+       flex-direction: column;
+       margin: auto;
+       justify-content: space-around;
+       width: 100%;
+       
+   }
+   .title-1{
+       display: flex;
+       margin: auto;
+       width: 70%;
+       flex-direction: column;
+  /*      border: 2px solid red; */
+   }
+
+   /* modificando los botones de la sección1 */
+        .boton-1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+     /*        border:2px solid red;  */
+            height: 50px;
+            flex-wrap: wrap;
+        }
+         .boton-1-a{
+            background-color: #157A74;
+            color: white;
+            margin: 10px ;
+            padding: 10px 15px;
+            border-radius: 20px;
+    /*         border: 2px solid red; */
+         }
+          .bo{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-around;
+          }
+
+
+/* maquetando la sección2 */
+.sección2{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    justify-content: space-around;
+    margin-top: 40px;
+  /*   border: 2px solid red; */
+
+}
+.stat-stat{
+   /*  border: 2px solis red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.recta{
+    width: 50%;
+    height:6px;
+    background-color: #157a74;
+    margin:auto;
+}
+
+/* maquetando la sección3*/
+
+.sección3{
+    width: 90%;
+    margin: auto;
+}
+ .sección3-p{
+     color: rgb(80, 73, 71);
+ }
+
+
+
+/* maquetando la sección 4 5 */
+.sección4{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid rgb(182, 180, 180);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.sección5{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid rgb(182, 180, 180);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+    p{
+        color: rgb(80, 73, 71);
+    }
+
+    .pequeño__header{
+      /*   border: 2px solid red; */
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        }
+            small{
+                color: #157A74;
+            }
+
+    .pequeño__main{
+     /*    border: 2px solid red; */
+        margin: auto;
+       
+        }
+    .pequeño__footer{
+      /*   border: 2px solid red; */
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        }
+            .footer-stat{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 15%;
+                align-items: center;  
+            }
+                .boton2__footer{
+                    background-color: #157A74;
+                    border-radius: 15px;
+                    color: white;
+                    padding: 8px 15px;
+                }
+ 
+/* maquetando sección 6 */
+.sección6{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid rgb(182, 180, 180);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color:rgb(80, 73, 71) ;
+}
+.pequeño__header6{
+  /*   border: 2px solid red; */
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    }
+        .small6{
+            color:rgb(80, 73, 71) ;
+        }
+
+.pequeño__main6{
+/*     border: 2px solid red; */
+    margin: auto;
+   
+    }
+.pequeño__footer6{
+   /*  border: 2px solid red; */
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    }
+        .footer-stat6{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 15%;
+            align-items: center;  
+        }
+            .boton2__footer6{
+                border-radius: 15px;
+                color: white;
+                padding: 8px 15px;
+                background-color: rgb(116, 113, 112);
+            }

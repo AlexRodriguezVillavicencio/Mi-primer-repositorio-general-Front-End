@@ -1,0 +1,46 @@
+@import url(reto-pagina-web-cuerpo.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: "commissioner",sans-serif;
+    max-width: 1440px;
+    background-color: rgb(250, 250,250);
+}
+
+/* construyendo la cabecera de menus */
+header{
+    /* border: 2px solid black; */
+    display: flex;
+    height: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    color: white;
+    padding: 40px 100px;    
+    /* me permite darle filtros a la imagen, en este caso un degradado */
+    background:linear-gradient(rgb(0, 0, 0),30%,transparent), url(images/image-hero-desktop.jpg);
+    
+}
+.titulo{
+   /*  border: 2px solid red; */
+    height: 50px;
+}
+.navegacion{
+  /*   border: 2px solid red; */
+    height: 50px;
+    display: flex;
+    align-items: center; /*  para poder centrar  */
+}
+    .navegacion a{
+        text-decoration: none;
+        color: white;
+        margin: 20px;
+ /*        border: 2px solid red; */
+    
+    }   
