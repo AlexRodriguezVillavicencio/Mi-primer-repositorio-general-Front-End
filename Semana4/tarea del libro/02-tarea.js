@@ -244,7 +244,7 @@ el mayor, y represéntelo con un diagrama de flujo y pseudocódigo. */
 x = prompt("cuantos años tiene laborando en la empresa");
 s = prompt("cual es su sueldo actual");
 
-if (2<x<5){
+if (2<x && x<5){
     if (s<=1000){
         s = s*.25;
         document.write("felicidades! tiene un bono extra de: "+ (s));
@@ -274,7 +274,7 @@ else if (5<=x){
 }
 else if (x<=2){
     if (s<=1000){
-        s = s*.25;
+        s = s*.25;                                                                                          
         document.write("felicidades! tiene un bono extra de: "+ (s));
     }
     else if (s<=3500){
@@ -285,8 +285,8 @@ else if (x<=2){
         s = s*.10   ;
         document.write("felicidades! tiene un bono extra de: "+ (s));
     }
-}
- */
+} */
+
 
 
 
@@ -376,7 +376,7 @@ else if (go>=2400){
     console.log("puedes viajar a mexico, PV o Acapulco");
 }
 else if (go>=1600){
-    console.log("puedes vijara a mexico o PV");
+    console.log("puedes vijar a a mexico o PV");
 }
 else if (go>=1500){
     console.log("puedes ir a mexico");
@@ -384,3 +384,348 @@ else if (go>=1500){
 else{
     console.log("puedes quedarte en casa, aun no te alcanza");
 } */
+
+
+
+
+
+/* 
+11. Se les dará un bono por antigüedad a los empleados de una tienda.
+Si tienen un año, se les dará $100; si tienen 2 años, $200, y así
+sucesivamente hasta los 5 años. Para los que tengan más de 5, el
+bono será de $1000. Realice un algoritmo y represéntelo mediante
+el diagrama de flujo, el pseudocódigo y diagrama N/S que permita
+determinar el bono que recibirá un trabajador. */
+
+
+/* let years = 0;
+years = +prompt("Cuantos años tienes laborando en la empresa");
+
+if (years == 1){
+    console.log ("se te dará un bono por 100 dolares");
+}
+else if (years == 2){
+    console.log("se te dará un bono por 200 dolares");
+}
+else if (years == 3){
+    console.log("se te dará un bono por 300 dolares");
+}
+else if (years ==4 ){
+    console.log("se te dará un bono por 400 dolares");
+}
+else if (years == 5 ){
+    console.log("se te dará un bono por 500 dolares");
+}
+else if (years > 5 ){
+    console.log("se te dará un bono por 1000 dolares");
+}
+else { 
+    console.log("No tienes bono");
+} */
+
+
+
+/* 12. Realice un algoritmo que permita determinar el sueldo semanal de
+un trabajador con base en las horas trabajadas y el pago por hora,
+considerando que a partir de la hora número 41 y hasta la 45, cada
+hora se le paga el doble, de la hora 46 a la 50, el triple, y que trabajar
+más de 50 horas no está permitido. Represente el algoritmo mediante
+el diagrama de flujo, el pseudocódigo y el diagrama N/S.*/
+
+/* let hour = 0;
+hour = prompt("horas trabajadas?");
+//considerando el pago de 10 soles la hora
+if (41<=hour && hour<=45){
+    hour= (hour-40)*2*10 + 40*10;
+    console.log(`su sueldo es: ${hour} soles`);
+}
+else if (46<= hour && hour <=50){
+    hour= (hour-45)*3*10 + 40*10 + 5*2*10;
+    console.log(`su sueldo es: ${hour} soles`);
+}
+else{
+    
+} */
+
+
+
+
+/* 13. Los alumnos de una escuela desean realizar un viaje de estudios,
+pero requieren determinar cuánto les costará el pasaje, considerando
+que las tarifas del autobús son las siguientes: si son más de 100
+alumnos, el costo es de $20; si son entre 50 y 100, $35; entre 20 y
+49, $40, y si son menos de 20 alumnos, $70 por cada uno. Realice
+el algoritmo para determinar el costo del pasaje de cada alumno.
+Represente el algoritmo mediante el diagrama de flujo, el pseudocódigo
+y el diagrama N/S. */
+
+/* let x = 0;
+x = prompt("cuantos alumnos son?");
+
+if (100<x){
+    x = x*20;
+    console.log(`el total es ${x} soles`);
+}
+else if (50<=x){
+    x = x*35;
+    console.log(`el total es ${x} soles`);
+}
+else if (20<=x){
+    x = x*40;
+    console.log(`el total es ${x} soles`);
+}
+else{
+    x = x*70;
+    console.log(`el total es ${x} soles`);
+} */
+
+
+
+
+/* 14. Realice un algoritmo que, con base en una calificación proporcionada
+(0-10), indique con letra la calificación que le corresponde: 10 es
+“A”, 9 es “B”, 8 es “C”, 7 y 6 son “D”, y de 5 a 0 son “F”. Represente
+el diagrama de flujo, el pseudocódigo y el diagrama N/S correspondiente. */
+
+/* let x = 0;
+x = prompt("ingrese su nota del 0 al 10");
+
+if ( x>=0 && x<=10 ){
+    if (x == 10){
+        console.log("A");
+    }
+    else if (x == 9){
+        console.log("B");
+    }
+    else if (x == 8){
+        console.log("C");
+    }
+    else if (x==7 || x==6){
+        console.log("D");
+    }
+    else if (x==0 || x ==1 || x==2 || x==3 || x==4 || x==5){
+        console.log("F");
+    }
+}
+else{
+ console.log("ERROR");
+} */
+
+
+
+
+
+/* 15. Realice un algoritmo que, con base en un número proporcionado
+(1-7), indique el día de la semana que le corresponde (L-D). 
+Represente el diagrama de flujo, el pseudocódigo y el diagrama N/S
+correspondiente. */
+
+/* let x = 0;
+x = prompt("ingrese un numero del 1 al 7");
+
+    if (x == 1){
+        console.log("LUNES");
+    }
+    else if (x == 2){
+        console.log("MARTES");
+    }
+    else if (x == 3){
+        console.log("MIERCOLES");
+    }
+    else if (x==4){
+        console.log("JUEVES");
+    }
+    else if (x==5){
+        console.log("VIERNES");
+    }
+    else if (x==6){
+        console.log("SABADO");
+    }
+    else if (x==7){
+        console.log("DOMINGO");
+    }
+    else{
+        console.log("ERROR");
+    } */
+
+
+/* 16. El secretario de educación ha decidido otorgar un bono por desempeño
+a todos los profesores con base en la puntuación siguiente:
+    ++++++++++++++++++++++++++++++
+    Puntos                    Premio
+    0 - 100                1 salario
+    101 - 150              2 salarios mínimos
+    151 - en adelante      3 salarios mínimos
+    +++++++++++++++++++++++++++++++
+Realice un algoritmo que permita determine el monto de bono que
+percibirá un profesor (debe capturar el valor del salario mínimo y
+los puntos del profesor). Represente el algoritmo mediante el diagrama
+de flujo, el pseudocódigo y el diagrama N/S. */
+
+/* let salario =0, puntos = 0;
+salario = prompt("ingrese su salario");
+puntos = +prompt("ingrese su puntaje");
+
+if (Number.isInteger(puntos)){
+//Number.isInteger(puntos) me permite validar si se ingreso un número entero
+    if (puntos>=0 && puntos<=100){
+        salario = salario;
+        console.log(`recibirá: ${salario}`);
+    }
+    else if (puntos>=101 && puntos<=150){
+        salario = 2*salario;
+        console.log(`recibirá: ${salario}`);
+    }
+    else if (puntos>=151){
+        salario = 3*salario;
+        console.log(`recibirá: ${salario}`);
+    }
+}
+else{
+    console.log("ERROR");
+} */
+
+
+
+
+
+/* 17. Realice un algoritmo y represéntelo mediante el diagrama de flujo,
+el pseudocódigo y el diagrama N/S que permitan determinar qué
+paquete se puede comprar una persona con el dinero que recibirá
+en diciembre, considerando lo siguiente:
+• Paquete A. Si recibe $50,000 o más se comprará una televisión,
+un modular, tres pares de zapatos, cinco camisas y cinco pantalones.
+• Paquete B. Si recibe menos de $50,000 pero más (o igual) de
+$20,000, se comprará una grabadora, tres pares de zapatos,
+cinco camisas y cinco pantalones.
+• Paquete C. Si recibe menos de $20,000 pero más (o igual) de
+$10,000, se comprará dos pares de zapatos, tres camisas y tres
+pantalones.
+• Paquete D. Si recibe menos de $10,000, se tendrá que conformar
+con un par de zapatos, dos camisas y dos pantalones. */
+
+
+/* let paqueteA = {
+    1: "TELEVISION",
+    2: "UN MODULAR",
+    3: "3 PARES DE ZAPATOS",
+    4: "5 CAMISAS",
+    5: "5 PANTALONES"
+}
+
+let paqueteB = {
+    1: "GRABADORA",
+    2: "3 PARES DE ZAPATOS",
+    3: "5 CAMISAS",
+    4: "5 PANTALONES"
+}
+
+let paqueteC = {
+    1: "2 PARES DE ZAPATOS",
+    2: "3 CAMISAS",
+    3: "3 PANTALONES"
+}
+
+let paqueteD = {
+    1: "1 PAR DE ZAPATOS",
+    2: "2 CAMISAS",
+    3: "2 PANTALONES"
+}
+
+let x = 0;
+x = prompt ("ingrese el monto")
+
+if (x>=50000){
+    console.log(paqueteA);
+}
+else if (x>=20000){
+    console.log(paqueteB);
+}
+else if (x>=10000){
+    console.log(paqueteC);
+}
+else{
+    console.log(paqueteD);
+} */
+
+
+
+/* 18. Realice un algoritmo y represéntelo mediante el diagrama de flujo,
+el pseudocódigo y el diagrama N/S que permitan determinar la cantidad
+del bono navideño que recibirá un empleado de una tienda,
+considerando que si su antigüedad es mayor a cuatro años o su sueldo
+es menor de dos mil pesos, le corresponderá 25 % de su sueldo, y
+en caso contrario sólo le corresponderá 20 % de éste. */
+
+/* let a = 0, s = 0;
+a = prompt ("cuantos años lleva en la empresa");
+s = prompt ("cual es su sueldo");
+
+if (a>4 || s<2000){
+    s = s*1.25;
+    console.log(s);
+}
+else {
+    s = s*1.2;
+    console.log(s);
+} */
+
+
+
+/* 19. La secretaria de salud requiere un diagrama de flujo que le represente
+el algoritmo que permita determinar qué tipo de vacuna (A, B o
+C) debe aplicar a una persona, considerando que si es mayor de 70
+años, sin importar el sexo, se le aplica la tipo C; si tiene entre 16 y
+69 años, y es mujer, se le aplica la B, y si es hombre, la A; si es menor
+de 16 años, se le aplica la tipo A, sin importar el sexo. */
+
+
+/* let edad = 0, sexo = 0;
+edad = +prompt("cual es su edad");
+sexo = prompt ("Cual es su sexo: M o F")
+
+if (sexo == "M" || sexo == "m" ||sexo == "F" || sexo == "f" ){
+  
+    if (edad>=70){
+        console.log("le toca la vacuna C");
+    }
+    else if (edad>=16 && edad<70){
+        if (sexo == "M" || sexo == "m"){
+            console.log("le toca la vacuna A");
+        }
+        else{
+            console.log("le toca la vacuna B");
+        }
+    }
+    else if (edad>=0 && edad<16) {
+        console.log("le toca la vacuna A chaval");
+    }
+    else{
+        console.log("ERROR");
+    }
+}
+
+else{
+    console.log("ERROR");
+} */
+
+
+
+
+
+
+/*20. Realice un algoritmo para resolver el siguiente problema: una fábrica
+de pantalones desea calcular cuál es el precio final de venta
+y cuánto ganará por los N pantalones q  ue produzca con el corte de
+alguno de sus modelos, para esto se cuenta con la siguiente información:
+a) Tiene dos modelos A y B, tallas 30, 32 y 36 para ambos modelos.
+b) Para el modelo A se utiliza 1.50 m de tela, y para el B 1.80 m.
+c) Al modelo A se le carga 80 % del costo de la tela, por mano de
+obra. Al modelo B se le carga 95 % del costo de la tela, por el
+mismo concepto.
+d) A las tallas 32 y 36 se les carga 4 % del costo generado por
+mano de obra y tela, sin importar el modelo.
+e) Cuando se realiza el corte para fabricar una prenda sólo se hace
+de un solo modelo y una sola talla.
+f) Finalmente, a la suma de estos costos se les carga 30%, que
+representa la ganancia extra de la tienda. */
